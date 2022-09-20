@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Agri Business Advisor</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="welcome">Welcome To Agribusiness Advisory System</string>
+    <string name="district_select">Click to Select Your District</string>
+    <string name="btnBuhera">Buhera</string>
+    <string name="btnChimanimani">Chimanaimani</string>
+    <string name="btnChipinge">Chipinge</string>
+    <string name="btnMakoni">Makoni</string>
+    <string name="btnMutare">Mutare</string>
+    <string name="btnMutasa">Mutasa</string>
+    <string name="btnNyanga">Nyanga</string>
+    <string name="action_select">Click to Select Action</string>
+    <string name="btnNote">Make Personal Notes</string>
+    <string name="btnAssess">Assess Project Viability</string>
+    <string name="region_select">Click to select your region</string>
+    <string name="txtRegion1">Region 1:\n Rain in all months of the year, relatively low
+        temperatures</string>
+    <string name="txtRegion2">Region 2:\n Rainfall confined to summer</string>
+    <string name="txtRegion3">Region 3:\n Relatively high temperatures and infrequent,heavy falls
+        of rain, and subject to seasonal droughts and severe mid-season dry spells</string>
+    <string name="txtRegion4">Region 4:\n Rainfall subject to frequent seasonal droughts and severe
+        dry spells during the rainy season</string>
+    <string name="txtRegion5">Region 5:\n Very erratic rainfall.</string>
+
+    <string name="txtLandpreparation">LAND PREPARATION:</string>
+    <string name="txtPlanting">PLANTING:</string>
+    <string name="txtCropmanagement">CROP MANAGEMENT</string>
+    <string name="txtPestmanagement">PEST MANAGEMENT:</string>
+    <string name="txtSeedrate">SEED RATE</string>
+    <string name="txtFertliser">FERTILISER RATE</string>
+    <string name="txtMarketing">MARKETING TIPS</string>
+
+    <string name="txtMarketTypeSelect">Click on arrow to to view market options and select market for evaluation</string>
+    <string name="txtMarketPrinciples">Marketing of agricultural products is based on the following basic principles:\n
+    There must be a demand for the product. If there is no demand, there is no market.\n
+    The price must be affordable and in line with other producers.\n
+    The place (location) must be convenient – easily accessible.\n
+    Promotion is advertising by word of mouth (reputation) or though radios, newspapers among other platforms.\n
+        Also the consumers’ needs, wishes and finances (ability to buy) must be considered whilst competition from other farmers must be known and understood fully.</string>
+
+    <string-array name="crop_markets">
+        <item>Fellow Farmers</item>
+        <item>Individual or household consumers</item>
+        <item>Local retailers or vendors</item>
+        <item>Urban retailers or vendors</item>
+        <item>Dealers or speculators</item>
+        <item>Processors</item>
+        <item>Institutional Consumers</item>
+        <item>Non Governmental Organisations</item>
+        <item>Government bodies or parastatals</item>
+        <item>Travellers</item>
+        <item>Foreign Markets</item>
+
+    </string-array>
+
+    <string name="evaluate_market">EVALUATE MARKET</string>
+
+    <string name="market_description">Description</string>
+    <string name="market_advantages">Advantages</string>
+    <string name="market_disadvantages">Disadvantages</string>
+
+    <string name="txtAssessViability">Enter projected values for the following</string>
+    <string name="txtGrossMargin">The Expected Profit is:</string>
+    <string name="txtCalculateProfit">Calculate Profit</string>
+
+    <string name="txtInputs">Click on arrow to select crop</string>
+    <string-array name="crops">
+        <item>Maize</item>
+        <item>Rapoko</item>
+        <item>Pearl Millet</item>
+        <item>Sorghum</item>
+        <item>tobacco</item>
+        <item>cotton</item>
+        <item>Sugarcane</item>
+    </string-array>
+    <string name="txtInputsQuantity">Inputs in Kgs</string>
+    <string name="txtCompoundD">Compound D</string>
+    <string name="txtAmmoniumNitrate">Ammonium Nitrate</string>
+    <string name="txtSeeds">Seeds</string>
+    <string name="txtCalculateInputs">CALCULATE INPUTS</string>
+
+    <string name="note_title_hint">Enter the note</string>
+    <string name="note_title_label">Note</string>
+    <string name="note_details_label">Details</string>
+
+    <string name="date_picker_title">Date of note:</string>
+    <string name="todo">TODO</string>
+</resources>

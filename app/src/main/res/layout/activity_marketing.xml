@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MarketingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/agric"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/txtMarketPrinciples"
+        android:padding="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/txtMarketTypeSelect"
+        android:padding="5dp"
+        android:textSize="16dp"/>
+
+        <Spinner
+            android:id = "@+id/crop_markets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/crop_markets"/>
+        <Button
+            android:id = "@+id/btnevaluate_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/evaluate_market"
+            android:onClick="findAdvice"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/market_description"/>
+
+        <TextView
+            android:id = "@+id/market_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = " "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/market_advantages"/>
+
+        <TextView
+            android:id = "@+id/market_advantages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = " "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/market_disadvantages"/>
+
+        <TextView
+            android:id = "@+id/market_disadvantages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = " "/>
+
+
+    </LinearLayout>
+
+</ScrollView>

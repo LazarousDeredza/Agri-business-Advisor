@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProjectViabilityActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/agric"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtAssessViability"
+        android:textSize="25dp"
+        android:padding="5dp"/>
+    <EditText
+        android:id = "@+id/etIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint = "Enter Income"/>
+    <EditText
+        android:id = "@+id/etSeedCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint = "Enter Seeed Cost"/>
+    <EditText
+        android:id = "@+id/etFertiliserCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint = "Enter Fertiliser Cost"/>
+    <EditText
+        android:id = "@+id/etLabourCosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint = "Enter Labour Cost"/>
+    <EditText
+        android:id = "@+id/etOtherCosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint = "Enter Other Costs"/>
+
+
+    <Button
+        android:id = "@+id/btnCalculateProfit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/txtCalculateProfit"
+        android:onClick="calculateProfit"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="@string/txtGrossMargin"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id = "@+id/txtGrossMargin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:text = ""/>
+
+</LinearLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background22"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation"
+
+
+        />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Agri-Business Advisor"
+                  android:textColor="#DDBEBE"
+                   android:textSize="25sp"
+                    style="@style/viewParent.headerText" />
+
+                <TextView
+                    android:text="We Are Here to help you make the best out of your farm"
+                    android:textColor="#DDBEBE"
+                    style="@style/viewParent.headerText.contentText"
+                    android:layout_marginBottom="20dp"/>
+
+
+                <!--Example with RelativeLayout and Gradient Drawable -->
+                <!-- for Recycler view use any of the layout as model-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+
+                    app:cardPreventCornerOverlap="true"
+                    android:id="@+id/region1"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="100dp"
+                        android:background="@drawable/home_gradient_maths"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub1Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:text="Region 1"
+                            android:textStyle="bold"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub1Title"
+                            android:text="Suitable for dairy farming forestry,\ntea, coffee, fruit, beef and \nmaize production ..." />
+
+                        <ImageView
+                            style="@style/homeCardImage"
+                            android:maxHeight="90dp"
+                            android:src="@drawable/dairy" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!--if the second one is used as model for recyclerView, refer:
+                https://appsnipp.com/gradient-layout-for-dynamic-gradients-in-android-without-drawable-library/
+                -->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    android:id="@+id/region2"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/side_nav_bar"
+                        android:layout_height="match_parent"
+                        android:minHeight="100dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub2Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:text="Region 2"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub2Title"
+                            android:text="Suitable for intensive farming,\nbased on maize, tobacco,\ncotton and livestock ..." />
+
+                        <ImageView
+                            style="@style/homeCardImage"
+                            android:maxHeight="90dp"
+                            android:src="@drawable/mm" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:id="@+id/region3"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/home_gradient_maths"
+
+                        android:minHeight="100dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub4Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:textSize="18sp"
+                            android:text="Region 3" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub4Title"
+                            android:text="Semi-intensive farming region. Suitable\nfor livestock production, together with\nproduction of fodder crops and cash\ncrops under good farm management ..." />
+
+                        <ImageView
+                            style="@style/homeCardImage"
+                            android:maxHeight="90dp"
+                            android:src="@drawable/hh" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:id="@+id/region4"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/side_nav_bar"
+
+                        android:minHeight="100dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textVie4Sub4Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:textSize="18sp"
+                            android:text="Region 4" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textVie4Sub4Title"
+                            android:text="Semi-extensive region. Suitable for\nfarm systems based on livestock and\nresistant fodder crops. Forestry,\nwildlife/tourism ..." />
+
+                        <ImageView
+                            style="@style/homeCardImage"
+                            android:maxHeight="90dp"
+                            android:src="@drawable/ff" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true"
+                    android:id="@+id/region5"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/home_gradient_maths"
+
+                        android:minHeight="100dp"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textViewSub5Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:textSize="18sp"
+                            android:text="Region 5" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub5Title"
+                            android:text="Extensive farming region. Suitable for\nextensive cattle ranching. Zambezi\nValley is infested with tsetse fly.\nForestry, wildlife/tourism ..." />
+
+                        <ImageView
+                            style="@style/homeCardImage"
+                            android:maxHeight="90dp"
+                            android:maxWidth="@dimen/_180sdp"
+                            android:src="@drawable/kk" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

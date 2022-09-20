@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegionCategoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/agric"
+            android:contentDescription="@string/todo" />
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/region_select"
+        android:textSize="25sp"
+        android:padding="25dp"/>
+
+
+
+    <Button
+        android:id = "@+id/btnRegion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/txtRegion1"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id = "@+id/btnRegion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/txtRegion2"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id = "@+id/btnRegion3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/txtRegion3"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id = "@+id/btnRegion4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/txtRegion4"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id = "@+id/btnRegion5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/txtRegion5"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
